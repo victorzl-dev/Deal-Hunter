@@ -20,7 +20,7 @@ O objetivo é encontrar oportunidades reais, não apenas preços aparentemente b
 - Notificações automáticas pelo Discord.
 - Execução independente do computador do usuário, por meio de infraestrutura cloud.
 
-## 🛒 Lojas no planejamento
+##  Lojas no planejamento
 
 | Loja | Situação |
 |---|---|
