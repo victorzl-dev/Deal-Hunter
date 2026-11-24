@@ -1,4 +1,4 @@
-# Deal Hunter 🔎
+# Deal Hunter 
 
 **Caçador automatizado de ofertas, monitoramento de preços e identificação de possíveis erros de precificação.**
 
@@ -8,7 +8,7 @@ A proposta é construir uma plataforma capaz de coletar preços continuamente, c
 
 O objetivo é encontrar oportunidades reais, não apenas preços aparentemente baixos.
 
-## 🎯 Funcionalidades planejadas
+##  Funcionalidades planejadas
 
 - Monitoramento automatizado de lojas online.
 - Coleta recorrente de produtos e preços.
@@ -35,7 +35,7 @@ O objetivo é encontrar oportunidades reais, não apenas preços aparentemente b
 
 Cada integração será desenvolvida e testada individualmente.
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ```text
                  DEAL HUNTER
@@ -53,7 +53,7 @@ Cada integração será desenvolvida e testada individualmente.
                 DISCORD ALERTS
 ```
 
-## 🧰 Tecnologias
+##  Tecnologias
 
 - JavaScript
 - Node.js
@@ -62,7 +62,7 @@ Cada integração será desenvolvida e testada individualmente.
 - JSON
 - Git e GitHub
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```text
 Deal-Hunter/
@@ -84,7 +84,7 @@ Deal-Hunter/
 └── README.md
 ```
 
-## 🚧 Desenvolvimento
+##  Desenvolvimento
 
 O projeto está em fase de evolução.
 
@@ -97,18 +97,18 @@ As prioridades atuais são:
 5. Reduzir falsos positivos.
 6. Implementar um sistema inteligente de alertas.
 
-## 🔐 Segurança
+##  Segurança
 
 Credenciais, tokens, webhooks e arquivos `.env` não devem ser publicados.
 
-## ⚠️ Observações
+##  Observações
 
 - Preços podem mudar a qualquer momento.
 - Uma queda de preço não significa necessariamente um erro de precificação.
 - Ofertas devem ser verificadas diretamente na loja.
 - A disponibilidade de coleta depende das condições e dos mecanismos de acesso de cada plataforma.
 
-## 📜 Direitos autorais
+##  Direitos autorais
 
 Copyright © 2026. Todos os direitos reservados.
 
