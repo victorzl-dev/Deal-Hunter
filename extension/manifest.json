@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Deal Hunter — Radar de Ofertas",
+  "version": "2.1.0",
+  "description": "Monitoramento de ofertas em varejistas conhecidos e alerta de preços atípicos.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.amazon.com.br/*",
+    "https://www.mercadolivre.com.br/*",
+    "https://lista.mercadolivre.com.br/*",
+    "https://www.magazineluiza.com.br/*",
+    "https://www.kabum.com.br/*",
+    "https://www.carrefour.com.br/*",
+    "https://www.casasbahia.com.br/*",
+    "https://www.pichau.com.br/*",
+    "https://www.terabyteshop.com.br/*",
+    "https://discord.com/api/webhooks/*",
+    "https://discordapp.com/api/webhooks/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icon128.png"
+  }
+}

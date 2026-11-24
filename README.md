@@ -1,117 +1,119 @@
-# Deal-Hunter
-Monitor de ofertas, histórico de preços e detecção de possíveis bugs de preço
+# Deal Hunter 🔎
 
+**Caçador automatizado de ofertas, monitoramento de preços e identificação de possíveis erros de precificação.**
 
-Deal Hunter 🔎
+O Deal Hunter é um projeto em desenvolvimento que busca oportunidades de compra em diferentes lojas de comércio eletrônico.
 
-Monitor inteligente de ofertas, histórico de preços e identificação de possíveis erros de precificação.
+A proposta é construir uma plataforma capaz de coletar preços continuamente, criar históricos de produtos, identificar quedas relevantes e enviar alertas automaticamente.
 
-O Deal Hunter é um projeto desenvolvido para monitorar lojas de comércio eletrônico, acompanhar a evolução dos preços e identificar oportunidades de compra, incluindo possíveis quedas atípicas de preço.
+O objetivo é encontrar oportunidades reais, não apenas preços aparentemente baixos.
 
-A proposta é construir um sistema automatizado, hospedado na nuvem, capaz de coletar informações de diferentes lojas e enviar alertas de oportunidades verificadas.
+## 🎯 Funcionalidades planejadas
 
-🎯 Objetivos
+- Monitoramento automatizado de lojas online.
+- Coleta recorrente de produtos e preços.
+- Histórico de preços por produto e variante.
+- Comparação de preços ao longo do tempo.
+- Identificação de quedas expressivas.
+- Detecção de possíveis erros de precificação.
+- Verificação de vendedores, disponibilidade e anúncios.
+- Notificações automáticas pelo Discord.
+- Execução independente do computador do usuário, por meio de infraestrutura cloud.
 
-Monitoramento automatizado de lojas online.
+## 🛒 Lojas no planejamento
 
-Histórico de preços por produto.
+| Loja | Situação |
+|---|---|
+| Mercado Livre | Integração a desenvolver |
+| Shopee | Integração a desenvolver |
+| Magazine Luiza | Integração a desenvolver |
+| KaBuM! | Coleta em validação |
+| TerabyteShop | Integração a desenvolver |
+| Pichau | Integração a desenvolver |
+| AliExpress | Integração a desenvolver |
+| Casas Bahia | Integração a desenvolver |
 
-Identificação de quedas reais de preço.
+Cada integração será desenvolvida e testada individualmente.
 
-Detecção de possíveis erros de precificação.
+## 🏗️ Arquitetura
 
-Validação de anúncios, vendedores e valores.
-
-Envio de notificações pelo Discord.
-
-Execução contínua em infraestrutura cloud.
-
-🛒 Lojas planejadas
-
-Loja
-
-Integração
-
-Mercado Livre
-
-Em desenvolvimento
-
-Shopee
-
-Em desenvolvimento
-
-Magazine Luiza
-
-Em desenvolvimento
-
-KaBuM!
-
-Em desenvolvimento
-
-TerabyteShop
-
-Em desenvolvimento
-
-Pichau
-
-Em desenvolvimento
-
-AliExpress
-
-Em desenvolvimento
-
-Casas Bahia
-
-Em desenvolvimento
-
-As integrações serão implementadas e validadas individualmente.
-
-⚙️ Arquitetura planejada
-
+```text
                  DEAL HUNTER
                       |
-                Cloud Server
+                CLOUD SERVER
                       |
-             Coletores por loja
+             COLETORES POR LOJA
                       |
-               Banco de dados
+               BANCO DE DADOS
                       |
-              Motor de análise
+              MOTOR DE ANÁLISE
                       |
-             Validação de ofertas
+             VALIDAÇÃO DE OFERTAS
                       |
-                Discord Alerts
+                DISCORD ALERTS
+```
 
-🧠 Tecnologias
+## 🧰 Tecnologias
 
-JavaScript
+- JavaScript
+- Node.js
+- Playwright
+- Discord Webhooks
+- JSON
+- Git e GitHub
 
-Node.js
+## 📂 Estrutura do projeto
 
-Playwright
+```text
+Deal-Hunter/
+├── extension/
+│   ├── background.js
+│   ├── manifest.json
+│   ├── scanner.js
+│   └── ...
+│
+├── webhook/
+│   ├── config.json
+│   ├── detect.mjs
+│   ├── extract.mjs
+│   ├── scan.mjs
+│   ├── stores.mjs
+│   └── package.json
+│
+├── .gitignore
+└── README.md
+```
 
-Discord Webhooks
+## 🚧 Desenvolvimento
 
-JSON
+O projeto está em fase de evolução.
 
-Git e GitHub
+As prioridades atuais são:
 
-🚧 Status do projeto
+1. Migrar a execução para um servidor cloud.
+2. Implementar coletores específicos para cada loja.
+3. Construir um histórico confiável de preços.
+4. Melhorar a identificação de produtos e variantes.
+5. Reduzir falsos positivos.
+6. Implementar um sistema inteligente de alertas.
 
-O Deal Hunter está em desenvolvimento.
+## 🔐 Segurança
 
-A prioridade atual é construir uma infraestrutura de coleta na nuvem, implementar integrações confiáveis com as lojas e desenvolver um histórico consistente para evitar alertas incorretos.
+Credenciais, tokens, webhooks e arquivos `.env` não devem ser publicados.
 
-Este projeto é experimental e não garante a identificação de todas as promoções ou erros de precificação.
+## ⚠️ Observações
 
-🔐 Segurança
+- Preços podem mudar a qualquer momento.
+- Uma queda de preço não significa necessariamente um erro de precificação.
+- Ofertas devem ser verificadas diretamente na loja.
+- A disponibilidade de coleta depende das condições e dos mecanismos de acesso de cada plataforma.
 
-Credenciais, tokens, webhooks e variáveis de ambiente não devem ser publicados no repositório.
+## 📜 Direitos autorais
 
-📌 Licença e direitos autorais
+Copyright © 2026. Todos os direitos reservados.
 
-Copyright © 2026. Victor Sousa Barbirato Todos os direitos reservados.
+Este repositório é público para consulta e avaliação de portfólio. Sua publicação não concede licença ou autorização para copiar, modificar, distribuir ou utilizar comercialmente o código sem autorização expressa do titular dos direitos autorais.
 
-Este repositório está disponível publicamente para consulta e avaliação de portfólio. A publicação do código não concede autorização para copiar, modificar, distribuir ou utilizar comercialmente o projeto sem autorização expressa do titular dos direitos autorais.
+---
 
-Deal Hunter — procurando oportunidades além das ofertas anunciadas.
+**Deal Hunter — procurando oportunidades além das ofertas anunciadas.**

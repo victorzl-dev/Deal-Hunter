@@ -1,0 +1,22 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências
+node_modules/
+
+# Dados locais
+state.json
+state.json.tmp
+
+# Logs e temporários
+*.log
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
+webhook/diagnostico.txt
+webhook/debug-amazon.mjs
+cls

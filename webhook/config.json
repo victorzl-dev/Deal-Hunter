@@ -1,0 +1,16 @@
+{
+  "keywords": [
+    "PlayStation 5",
+    "SSD 1TB",
+    "monitor 144Hz"
+  ],
+  "enabledStores": [
+    "kabum",
+    "pichau",
+    "terabyte",
+    "magalu"
+  ],
+  "intervalMinutes": 15,
+  "aggressive": true,
+  "maxAlertsPerMessage": 10
+}

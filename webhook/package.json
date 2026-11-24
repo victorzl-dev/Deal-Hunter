@@ -1,0 +1,14 @@
+{
+  "name": "deal-hunter-webhook",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "setup": "npx playwright install chromium",
+    "start": "node --env-file=.env scan.mjs",
+    "once": "node --env-file=.env scan.mjs --once",
+    "test-webhook": "node --env-file=.env scan.mjs --test"
+  },
+  "dependencies": { "playwright": "^1.48.0" },
+  "engines": { "node": ">=20.6" }
+}
