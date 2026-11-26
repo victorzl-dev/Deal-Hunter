@@ -19,4 +19,4 @@ state.json.tmp
 Thumbs.db
 webhook/diagnostico.txt
 webhook/debug-amazon.mjs
-cls
+*.bak

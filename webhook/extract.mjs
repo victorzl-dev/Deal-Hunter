@@ -169,7 +169,7 @@ export function extractInPage() {
 
         const price = validPrice(offer.price);
         const title = clean(data.name);
-        const href = data.url || location.href;
+        const href = data.url;
 
         add(makeItem(title, price, href));
       }
